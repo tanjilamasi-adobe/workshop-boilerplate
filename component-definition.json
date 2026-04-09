@@ -710,6 +710,22 @@
               }
             }
           }
+        },
+        {
+          "title": "Full name",
+          "id": "full-name",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/fd/components/form/textinput/v1/textinput",
+                "template": {
+                  "jcr:title": "Full name",
+                  "fieldType": "text-input",
+                  "fd:viewType": "full-name"
+                }
+              }
+            }
+          }
         }
       ]
     }

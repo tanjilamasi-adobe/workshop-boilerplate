@@ -1,0 +1,55 @@
+{
+  "definitions": [
+    {
+      "title": "Full name",
+      "id": "full-name",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/fd/components/form/textinput/v1/textinput",
+            "template": {
+              "jcr:title": "Full name",
+              "fieldType": "text-input",
+              "fd:viewType": "full-name"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "full-name",
+      "fields": [
+        {
+          "component": "tab",
+          "label": "Basic",
+          "name": "basic"
+        },
+        {
+          "...": "../../models/form-common/_basic-input-placeholder-fields.json#/fields"
+        },
+        {
+          "...": "../../models/form-common/_basic-input-default-value-fields.json#/fields"
+        },
+        {
+          "component": "boolean",
+          "name": "multiLine",
+          "label": "Allow multiple lines",
+          "valueType": "boolean"
+        },
+        {
+          "component": "tab",
+          "label": "Validation",
+          "name": "validation"
+        },
+        {
+          "...": "../../models/form-common/_string-validation-fields.json#/fields"
+        },
+        {
+          "...": "../../models/form-common/_help-container.json#/fields"
+        }
+      ]
+    }
+  ]
+}
